@@ -1,5 +1,7 @@
 #!/bin/bash
-                                                                                        Time () {
+
+
+Time () {                                                       Time () {
 
 eval Dial=\($(awk '/\(\) {|\t}|^}/ {print "["NR"]="$1}' $@)\)
 
